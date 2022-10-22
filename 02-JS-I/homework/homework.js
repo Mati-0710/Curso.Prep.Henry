@@ -72,7 +72,7 @@ function sonIguales(x, y) {
     if (x==y) 
       return true;
     else
-      return flase;
+      return false;
   
 }
 
@@ -104,7 +104,7 @@ function mayorQueCincuenta(num) {
   if (num>50)
     return true;
   else 
-  return flase;
+  return false;
 }
 
 function obtenerResto(x, y) {
