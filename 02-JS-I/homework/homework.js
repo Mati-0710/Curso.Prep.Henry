@@ -203,7 +203,7 @@ function esPositivo(numero) {
     return "Es positivo"
  }
  else {
-   return "Es negtivo"
+   return "Es negativo"
  }
  
 }
