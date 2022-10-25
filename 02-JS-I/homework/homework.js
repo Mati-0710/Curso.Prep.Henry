@@ -128,12 +128,11 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  valor=(num%2);
-  if (num===0){
+
+  if (num%2===0){
     return true;
-  }
-  else{
-  return false;
+  } else{
+     return false;
   }
 }
 
@@ -141,8 +140,8 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  valor=(num%2);
-  if (num===1){ 
+  
+  if (num%2===1){ 
     return true;
   }
   else{ 
@@ -175,21 +174,21 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var valor=math.round(num) 
-  return valor;
+   
+  return nuevo=(math.round(num));
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var valor=math.ceil(num) 
-  return valor;
+   
+  return valor=(math.ceil(num));
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.random();
+  return random=(math.random());
 }
 
 function esPositivo(numero) {
@@ -200,21 +199,21 @@ function esPositivo(numero) {
   if (numero===0){
     return false;
   }
-  else if (numero>0);{
-    return ("Es positivo");
+  else if (numero>0){
+    return "Es positivo"
  }
-  else {
-    return ("Es positivo")
-   }
-  
+ else {
+   return "Es negtivo"
+ }
+ 
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  var nuevastring=(str+!);
-  return nuevastring;
+  
+  return str+"!"
 }
 
 function combinarNombres(nombre, apellido) {
@@ -230,7 +229,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var saludo=("Hola "+nombre);
+  var saludo=("Hola "+nombre+"!");
   return saludo;
   
 }
@@ -277,11 +276,11 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
- var cantidad= letra.length;
-    if (cantidad > 1);{
+  
+    if (letra.length > 1){
       return "Dato incorrecto"
     }
-    if (letra==="a" || letra==="e" || letra==="i" ||letra==="o" || letra==="u");{
+     if (letra==="a" || letra==="e" || letra==="i" ||letra==="o" || letra==="u"){
       return "Es vocal"
     }
     return "Dato incorrecto"
