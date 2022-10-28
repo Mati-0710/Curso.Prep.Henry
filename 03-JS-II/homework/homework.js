@@ -54,10 +54,10 @@ function saludo(idioma) {
     return "Guten Tag!";
   }
   else if (idioma==="mandarin"){
-    return "Ni Hao";
+    return "Ni Hao!";
   }
   else if (idioma==="ingles"){
-    return "Hello";
+    return "Hello!";
   }
   return "Hola!";
 }
@@ -124,12 +124,14 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if(numero % 15 === 0){
+    return "fizzbuzz";
+  }
   if (numero % 3 === 0){
     return "fizz";
-  }else if(numero % 5 === 0){
+  }
+  if(numero % 5 === 0){
     return "buzz";
-  }else if(numero % 15 === 0){
-    return "fizzbuzz";
   }
   return numero;
 }
@@ -146,7 +148,7 @@ function operadoresLogicos(num1, num2, num3) {
   }else if (num1===0 || num2===0 || num3===0){
     return "Error";
   }else if (num1>num2 && num1>num3){
-    return "Numero 1 es mayor y positivo";
+    return "Número 1 es mayor y positivo";
   }else if (num3>num1 && num3>num2){
     return (num3+1);
   }
@@ -163,7 +165,7 @@ function esPrimo(numero) {
     return "falso";
   }
   else if (numero%numero===0){
-    return "true";
+    return true;
   }
 }
 
@@ -193,7 +195,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero.length===3){
+  if (numero>99 && numero<1000){
     return true;
   }
   return false;
@@ -203,7 +205,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  
+  var a=numero;
+  var i=0;
+  do{
+    i= i+1;
+    a= a+5;
+  }while(i<8);
+  return a;
 }
 
 
