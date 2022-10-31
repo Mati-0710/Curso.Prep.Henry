@@ -190,7 +190,7 @@ function mesesDelAño(array) {
     }
   }
   if (meses.length<3){
-    return "No se econtaron los meses pedidos";
+    return "No se encontraron los meses pedidos";
   }
   return meses;
 }
